@@ -1,0 +1,15 @@
+{
+  "name": "bdd-cucumber-tutorial",
+  "version": "1.0.0",
+  "description": "Cucumber Tutorial Project",
+  "main": "index.js",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.0",
+    "selenium-webdriver": "^4.8.2"
+  },
+  "scripts": {
+    "test": "cucumber-js cucumber_automation/features/*feature --require cucumber_automation/**/*.js"
+  },
+  "author": "Martin S.R.",
+  "license": "MIT"
+}
