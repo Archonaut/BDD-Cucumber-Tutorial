@@ -27,13 +27,13 @@ module.exports.user = user
 // Put in the correct password and confirm via Enter
 async function correctPassword(){
     const browser = await openBrowser()
-    await browser.findElement(passWordField).sendKeys(Key.DELETE, password, Key.ENTER)
+    await browser.findElement(passWordField).sendKeys(password)
 }
 module.exports.correctPassword = correctPassword
 
 //Submit the credentials via confirm
-async function abc(){
-    const browser = await openBrowser()
-    await browser.findElement(wp-submit).click
+async function confirmButton(){
+    const browser = await openBrowser()    
+    await browser.findElement(By.id("wp-submit")).submit();	
 }
-module.exports.submitButton = submitButton
+module.exports.confirmButton = confirmButton
